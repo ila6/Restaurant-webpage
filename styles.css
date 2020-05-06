@@ -1,0 +1,81 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #2F3035;
+    background-image: url(images/backgroundrestaurant.jpg);
+    background-size: cover; /* this for responsiveness*/
+    background-repeat: no-repeat; /*on mobile version it will not repeat the
+    background image but alone this will show gray background color instead
+    we don't want that also so we style html document by html{height:100%} see
+    above*/
+    background-position: center; /*so that image doesn't move from left to right
+    on a small device*/
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+header{
+ height: 118px;
+ text-align: center;
+  /*for all the images and texts in header tag*/
+ /*width: auto; /* you can also give 1024px;*/
+}
+
+nav{
+    background-color:rgba(0,0,0,30%); /* a is for alpha(transparency)*/
+    /*height: 40px; no need if we add padding for nav bar*/
+   /* width: auto;*/
+   text-align: center; /*to make all of them center*/
+   color: white;
+   padding-top: 14px;
+   padding-bottom: 14px;
+}
+
+main{
+    height: 400px;
+    text-align: center; /*main wraps h1 and p tag and instead of doing text 
+    alignment center for each we can do it for the tag that wraps them
+    together.*/
+    padding-top: 80px;
+    padding-left: 240px;
+    padding-right: 240px;
+    font-family: Arial, Helvetica, sans-serif;
+   /* width: auto; */
+}
+
+footer{
+    background-color:rgba(0,0,0,70%);
+    padding-top: 25px;
+    padding-bottom: 25px;
+   /* width: auto; */
+   color: white;
+   text-align: center;
+}
+h1{
+    color: white;
+    font-size: 84px;
+
+}
+p{
+    color: white;
+    
+    font-size: 18px;
+}
+a{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+nav a{ /*compund slectors only making navigation anchor tags without underline*/
+    text-decoration: none; /* no underlines for the links*/ 
+}
+footer p{
+    font-size: 14px;
+}
+section{
+    padding-bottom: 100px;
+}
